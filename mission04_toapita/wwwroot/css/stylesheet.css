@@ -1,0 +1,50 @@
+/* .gradCalc {
+    float: right;
+    text-align: left;
+    padding-left: 195px;
+} */
+
+div {
+    width: 75%;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+
+p {
+    text-align: left;
+}
+
+center {
+    padding: 10px;
+}
+
+.body {
+    text-align: center;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+label {
+    padding-left: 20px;
+}
+
+/* input {
+    margin:;
+} */
+
+.textbox {
+    width: 40px;
+}
+
+.calcGrade {
+    border-style: solid;
+    text-align: center;
+    width: 100%;
+}
+
+.colored {
+    color: white;
+}
