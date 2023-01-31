@@ -11,8 +11,8 @@
     let finalGrade = (assignmentGrade * .50) + (groupProjectGrade * .1) + (quizzesGrade * .1)
         + (midtermGrade * .1) + (finalExamGrade * .1) + (intexGrade * .1)
 
-    // calculate and output letter grade
-    $("#result").html(calcLetterGrade(finalGrade))
+    // calculate and output letter grade and percent
+    $("#result").html("Your Final Score is (" + finalGrade + ")% " + calcLetterGrade(finalGrade))
 
 })
 
