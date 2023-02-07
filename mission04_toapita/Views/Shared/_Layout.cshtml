@@ -1,0 +1,44 @@
+﻿<!-- Name: Toa Pita
+     Section: 001
+     Description: My first ASP.NET app. Woohoo!!!!
+-->
+<!--This is the default stuff for my website-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--I added a Mac book icon in honer of Evil Hilton.-->
+    <link rel="icon" type="image/x-icon" href="/img/icons8-macbook-80.png" />
+
+    <!--Grab the title out of the Shared View Variables-->
+    <title>@ViewData["Title"]</title>
+
+    <!--Adding bootstrap css and my own css-->
+
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+
+        <!--Use the fancy routing actions from asp. So cool!!!!-->
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="Grades">Grade Calculator</a>
+    </nav>
+    <center>
+        <div class="body">
+            <!--I think everything looks better centered although it doesn't work too well'-->
+            @RenderBody()
+        </div>
+
+        <!--importing my libraries-->
+        <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/lib/jquery-3.6.3.min.js"></script>
+    </center>
+</body>
+
+</html>

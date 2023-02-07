@@ -12,7 +12,10 @@
         + (midtermGrade * .1) + (finalExamGrade * .1) + (intexGrade * .1)
 
     // calculate and output letter grade and percent
-    $("#result").html("Your Final Score is (" + finalGrade + ")% " + calcLetterGrade(finalGrade))
+    //$("#result").html("Your Final Score is (" + finalGrade + ")% " + calcLetterGrade(finalGrade))
+
+    // changing to an alert so that the it shows before the page refreshes
+    alert("Your Final Score is (" + finalGrade + ")% " + calcLetterGrade(finalGrade));
 
 })
 
